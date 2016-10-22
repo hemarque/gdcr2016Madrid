@@ -15,7 +15,7 @@ public class Cell {
 	public Cell nextIteration() {
 		try {
 			HashMap<Integer, Boolean> diccionario = new HashMap<Integer, Boolean>();
-			diccionario.put(2, true);
+			diccionario.put(2, isAlive);
 			diccionario.put(3, true);
 			this.isAlive = (Boolean) diccionario.get(this.neighbours);
 		} catch (Exception e) {
